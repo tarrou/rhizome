@@ -17,6 +17,15 @@ Then we commit
 git commit -m "The -m means you're adding this message."
 ```
 
+Then we push it to GitHub.
+
+'''shell
+git pull -u origin master
+'''
+
+The `-u` stands for upstream, which I don't really understand. It forces a tracking update for already up-to-date files.
+
+
 # To get files back from github
 
 ```shell

@@ -20,7 +20,7 @@ git commit -m "The -m means you're adding this message."
 Then we push it to GitHub.
 
 '''shell
-git pull -u origin master
+git push -u origin master
 '''
 
 The `-u` stands for upstream, which I don't really understand. It forces a tracking update for already up-to-date files.
@@ -31,3 +31,5 @@ The `-u` stands for upstream, which I don't really understand. It forces a track
 ```shell
 git pull origin master
 ```
+
+# To make a branch

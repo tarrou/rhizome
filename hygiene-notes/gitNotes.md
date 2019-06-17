@@ -22,15 +22,9 @@ git commit -m "The -m means you're adding this message."
 
 Then we push it to GitHub.
 
-<<<<<<< HEAD:hygiene-notes/gitNotes.md
 '''shell
 git push -u origin master
 '''
-=======
-```shell
-git push -u origin master
-```
->>>>>>> gitNotes:gitnotes/gitNotes.md
 
 The `-u` stands for upstream, which I don't really understand. It forces a tracking update for already up-to-date files.
 

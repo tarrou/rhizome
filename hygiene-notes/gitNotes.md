@@ -89,6 +89,14 @@ echo 'export GPG_TTY=$(tty)' >> ~/.profile
 git config --global commit.gpgsign true
 ```
 
+Some other stuff was needed. I don't know why:
+
+```shell
+brew install pinetry-mac
+echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent
+killall gpg-agent
+```
+
 Now, I found all that 'export GPG_TTY' stuff didn't work. Maybe I needed to reload profiles or something, but in the end I did it manually with:
 
 ```shell

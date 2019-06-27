@@ -107,3 +107,13 @@ echo "test" | gpg --clearsign
 The second line just tests that everything is good to go. It should return a PGP signature.
 
 Now all your commits will be signed!
+
+To make it so you don't have to enter the passcode everytime:
+
+```shell
+$ vim ~/.gnupg/gpg-agent.conf 
+pinentry-timeout 0
+pinentry-program /usr/bin/pinentry-curses
+```
+
+Remember, ESC-:x is save and exit in vim.

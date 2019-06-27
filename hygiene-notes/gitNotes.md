@@ -1,10 +1,14 @@
-# Good sources
+# How to use git
+
+## Good sources
+
 [Don't be afraid to commit](https://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html)
 
-# To add a file or files
+## To add a file or files
+
 First, we put them in the staging environment
 
-```shell
+```shellurces
 git add <filename>
 ```
 
@@ -22,29 +26,27 @@ git commit -m "The -m means you're adding this message."
 
 Then we push it to GitHub.
 
-'''shell
+```shell
 git push -u origin master
-'''
+```
 
 The `-u` stands for upstream, which I don't really understand. It forces a tracking update for already up-to-date files.
 
-
-# To get files back from github
+## To get files back from github
 
 ```shell
 git pull origin master
 ```
 
-# To make a branch
+## To make a branch
 
 ```shell
 git branch [branch-name]
 ```
 
+## The nutty trail to sign commits
 
-# The nutty trail to sign commits
-
-First, you can't use `SSH `to sign commits locally, so I had to get `gpg`. using homebrew.
+First, you can't use `SSH` to sign commits locally, so I had to get `gpg`. using homebrew.
 
 First get homebrew and then instal `gpg`"
 
@@ -53,7 +55,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install gnupg
 ```
 
-If you look this up on-line, you'll see references to `gpg`, `gpg1`, and `gpg2`. These are no longer relevant. It seems `gpg2` has won, so there's just `gpg`. 
+If you look this up on-line, you'll see references to `gpg`, `gpg1`, and `gpg2`. These are no longer relevant. It seems `gpg2` has won, so there's just `gpg`.
 
 Now it's time to make a key:
 
@@ -111,7 +113,7 @@ Now all your commits will be signed!
 To make it so you don't have to enter the passcode everytime:
 
 ```shell
-$ vim ~/.gnupg/gpg-agent.conf 
+$ vim ~/.gnupg/gpg-agent.conf
 pinentry-timeout 0
 pinentry-program /usr/bin/pinentry-curses
 ```

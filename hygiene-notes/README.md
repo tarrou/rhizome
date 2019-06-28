@@ -1,3 +1,5 @@
 # The basics
 
-[a relative link](gitNotes.md)
+[Git Notes](gitNotes.md)
+
+[Shell Notes](shellNotes.md)

@@ -6,10 +6,15 @@ def main():
     flashcards_file = sys.argv[1]
     # What is file doesn't exist?
     if not flashcards_file:
-        "Using default flashcards"
+        print("Using default flashcards")
         flashcards_file = "flashcards.csv"
+    cards = pd.read_csv(flashcards_file)
 
-def flash(filename):
+    
+
+
+
+def flash_a_card(filename):
     cards = pd.read_csv(filename)
     #pick number according to prob
 

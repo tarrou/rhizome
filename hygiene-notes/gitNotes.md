@@ -118,4 +118,4 @@ pinentry-timeout 0
 pinentry-program /usr/bin/pinentry-curses
 ```
 
-Remember, ESC-:x is save and exit in vim.
+Remember, `ESC-:x` or `ESC-ZZ` is save and exit in vim. To insert text, use `ESC-i`.

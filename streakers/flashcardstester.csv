@@ -1,0 +1,4 @@
+knowledge_level,short_question,detail_answer,detail_question,short_answer
+1.0,What is the studying module?,The tools for displaying and manipulating flashcards.,What is the module that provides the tools for manipulating flashcards?,studying
+28.67971990792444,What does <git checkout branch_name> do?,The command <git checkout branch_name> activates the branch_name branch.,How do you change branches with git?,<git checkout branch_name>
+5.467500000000002,What does <sys.argv[1]> do?,This refers to <argument> in the terminal line <python script.py argument>.,In <script.py> how do you refer to <argument> in <python script.py>,<sys.argv[1]>
